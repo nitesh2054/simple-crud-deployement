@@ -13,6 +13,7 @@ public class StudentService {
 	@Autowired
 	StudentRepository studentRepository;
 	public List<Student> getStudents() {
+		System.err.println("Get Api called");
 		return this.studentRepository.findAll();
 	}
 	public Student saveStudent(Student student) {

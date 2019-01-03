@@ -17,6 +17,7 @@ public class StudentService {
 		return this.studentRepository.findAll();
 	}
 	public Student saveStudent(Student student) {
+		System.err.println("Post Api called");
 		return this.studentRepository.save(student);
 	}
 
